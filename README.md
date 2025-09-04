@@ -1,25 +1,25 @@
-# 🚀 Space Wars!! (Alien Shooter Game with PyOpenGL + GLUT)
+# Space Wars!! (Alien Shooter Game with PyOpenGL + GLUT)
 
-A **classic top-down alien shooter** built entirely with **PyOpenGL** and **GLUT**.  
+A classic top-down alien shooter built entirely with **PyOpenGL** and **GLUT**.  
 Every element — ships, bullets, power-ups — is drawn using **custom rasterization algorithms** (Bresenham’s line, midpoint circle, semicircle), rendered as `GL_POINTS`.  
-No sprites. No textures. Just pure OpenGL primitives. 🎨
+No sprites. No textures. Just pure OpenGL primitives.
 
 ---
 
-## 📖 Table of Contents
-1. [Overview](#-overview)
-2. [Features](#-features)
-3. [Controls](#-controls)
-4. [Gameplay Rules](#-gameplay-rules)
-5. [Installation & Setup](#-installation--setup)
-6. [Code Highlights](#-code-highlights)
-7. [Customization](#-customization)
-8. [License](#-license)
-9. [Credits](#-credits)
+## Table of Contents
+1. [Overview](#overview)  
+2. [Features](#features)  
+3. [Controls](#controls)  
+4. [Gameplay Rules](#gameplay-rules)  
+5. [Installation & Setup](#installation--setup)  
+6. [Code Highlights](#code-highlights)  
+7. [Customization](#customization)  
+8. [License](#license)  
+9. [Credits](#credits)  
 
 ---
 
-## 🔭 Overview
+## Overview
 
 **Space Wars!!** is a 2D alien shooter game where you:
 - Control a player ship at the bottom of the screen.
@@ -28,64 +28,64 @@ No sprites. No textures. Just pure OpenGL primitives. 🎨
 - Manage lives and survive as long as possible while the difficulty increases.
 
 The game uses:
-- **Orthographic projection**: `glOrtho(0, 800, 0, 600, -1, 1)`
-- **Custom rasterization**: Line and circle algorithms
-- **GLUT event loop** for rendering, input handling, and timers.
+- Orthographic projection: `glOrtho(0, 800, 0, 600, -1, 1)`
+- Custom rasterization: Line and circle algorithms
+- GLUT event loop for rendering, input handling, and timers.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🛠 **Pure OpenGL Primitives**  
+- **Pure OpenGL Primitives**  
   No external images or sprites — everything is algorithmically drawn.
 
-- 🖥 **Custom UI Buttons**  
-  Restart ⟳, Pause/Play ⏯, and Quit ❌ buttons drawn directly in OpenGL.
+- **Custom UI Buttons**  
+  Restart, Pause/Play, and Quit buttons drawn directly in OpenGL.
 
-- 🎮 **Dynamic Difficulty**  
+- **Dynamic Difficulty**  
   Enemy fall speed increases with score; slowed down by collecting speed power-ups.
 
-- 💡 **Power-Ups & Penalties**
-  - ⭐ **Star** → shoot for +100 points  
-  - 🟢 **Plus** → increases bullet size  
-  - 🔴 **Minus** → decreases bullet size  
-  - 🩷 **Speed** → slows down falling enemies  
-  - ❤️ **Love** → grants extra life  
+- **Power-Ups and Penalties**
+  - Star → shoot for +100 points  
+  - Plus → increases bullet size  
+  - Minus → decreases bullet size  
+  - Speed → slows down falling enemies  
+  - Love → grants extra life  
 
 ---
 
-## 🎮 Controls
+## Controls
 
 ### Keyboard
-| Key        | Action                         |
-|------------|--------------------------------|
-| `← → ↑ ↓` | Move the player ship            |
-| `Space`    | Shoot bullet                   |
-| `y`        | Change ship color → Yellow     |
-| `p`        | Change ship color → Pink       |
-| `o`        | Change ship color → Orange     |
-| `i`        | Change ship color → Indigo-Blue|
+| Key        | Action                  |
+|------------|-------------------------|
+| ← / → / ↑ / ↓ | Move the player ship |
+| Space      | Shoot bullet            |
+| y          | Change ship color → Yellow |
+| p          | Change ship color → Pink   |
+| o          | Change ship color → Orange |
+| i          | Change ship color → Indigo-Blue |
 
 ### Mouse (Top Bar UI)
-| Button              | Action   |
-|---------------------|----------|
-| **Cyan Arrow** ⟳   | Restart  |
-| **Orange Square** ⏯ | Pause/Resume |
-| **Red X** ❌       | Quit     |
+| Button        | Action         |
+|---------------|----------------|
+| Cyan Arrow    | Restart        |
+| Orange Square | Pause/Resume   |
+| Red X         | Quit           |
 
 ---
 
-## 🎯 Gameplay Rules
+## Gameplay Rules
 
 - **Scoring**
-  - +1 point → Shooting an alien ship  
-  - +100 points → Shooting a ⭐ Star  
+  - +1 point for shooting an alien ship  
+  - +100 points for shooting a Star  
 
 - **Lives**
-  - Start with **3 lives**  
-  - Max lives = **10** (collect ❤️ Love to increase)  
+  - Start with 3 lives  
+  - Maximum lives: 10 (can increase with Love)  
   - Lose 1 life if:
-    - 5 enemies reach the bottom, **or**  
+    - 5 enemies reach the bottom, or  
     - 5 misfires (missed bullets or pressing invalid keys while unpaused)  
 
 - **Difficulty**
@@ -94,13 +94,13 @@ The game uses:
 
 ---
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### Requirements
-- Python **3.8+**
+- Python 3.8+
 - [PyOpenGL](https://pypi.org/project/PyOpenGL/)  
 - [PyOpenGL_accelerate](https://pypi.org/project/PyOpenGL-accelerate/)  
-- GLUT implementation (e.g., **freeglut**)
+- GLUT implementation (e.g., freeglut)
 
 ### Install Python Dependencies
 ```bash
