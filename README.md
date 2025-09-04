@@ -4,9 +4,14 @@ A **classic top-down alien shooter** built entirely with **PyOpenGL** and **GLUT
 Every element — ships, bullets, power-ups — is drawn using **custom rasterization algorithms** (Bresenham’s line, midpoint circle, semicircle), rendered as `GL_POINTS`.  
 No sprites. No textures. Just pure OpenGL primitives. 
 
----
+---<img width="1002" height="793" alt="1" src="https://github.com/user-attachments/assets/c283516e-b9d1-46ca-92c5-db871b9193e4" />
+<img width="982" height="788" alt="2" src="https://github.com/user-attachments/assets/62f92af7-31b5-49d7-bacf-57bd51d46b56"
+<img width="986" height="781" alt="3" src="https://github.com/user-attachments/assets/49e703db-b2d5-4b22-b0ac-807c5caabe4e" />
+ />
 
-## 📖 Table of Contents
+
+## 📖 Table of Contents![Uploading 2.png…]()
+
 1. [Overview](#-overview)
 2. [Features](#-features)
 3. [Controls](#-controls)
