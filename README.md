@@ -11,7 +11,7 @@ No sprites. No textures. Just pure OpenGL primitives.
 <img width="982" height="788" alt="2" src="https://github.com/user-attachments/assets/62f92af7-31b5-49d7-bacf-57bd51d46b56" />
 <img width="986" height="781" alt="3" src="https://github.com/user-attachments/assets/49e703db-b2d5-4b22-b0ac-807c5caabe4e" />
 
-## 📖 Table of Contents![Uploading 2.png…]()
+## 📖 Table of Contents!
 
 1. [Overview](#-overview)
 2. [Features](#-features)
